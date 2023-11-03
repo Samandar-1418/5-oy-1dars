@@ -3,6 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.link {
+    
+}
+a {
+    text-decoration: none;
+    
+}
 .container {
     width: 800px;
     height: 120px;
@@ -21,14 +34,10 @@ p {
 :hover {
     cursor: pointer;
 }
-.container:hover {
-    background-color: rgb(58, 184, 56);
-    color: rgb(162, 147, 147);
-    transform: translate(1.3px,1.3px);
-}
+
 h1 {
     color: rgb(162, 147, 147);
-    margin: 50px auto;
+    
 }
 input {
     background-color: aqua;
@@ -37,6 +46,9 @@ input {
 input:hover {
     background-color: rgb(32, 87, 87);
     color:rgb(166, 157, 174);
+}
+.Wrapper {
+    margin: 0 auto;
 }
 button  {
     width: 550px;
@@ -51,4 +63,8 @@ button:hover {
 }
 .container {
     background-image: linear-gradient(rgb(23, 110, 23),rgb(39, 164, 39),rgb(119, 239, 119),rgb(172, 225, 172));
+}
+.container:hover {
+    background-image:linear-gradient(green);
+    transform: translate(1.3px,1.3px);
 }

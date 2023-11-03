@@ -7,72 +7,81 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Ro'yxatdan o'ting:</h1>
-   <div class="container"> 
-    <label for="username"><br>
-    <p>Foydalanuvchi nomini kiriting:</p> <br>
-    <input type="text" id="username"  placeholder="username"><br>
-</label><br>
-</div>
+    <header class="header">
+        <label for="username">
+            <h1>Ro'yxatdan o'ting:</h1>
+        </label>
+        <div class="link"><a href="./main.html"><button style="width: 100px; border-radius:10px; background-color:green; color: white; margin-top: 50px;">Log In</button></a></div>
+   
+    </header>
+ <div class="main">
+    <div class="container"> 
+        <label for="username"><br>
+        <p>Foydalanuvchi nomini kiriting:</p> <br>
+        <input type="text" id="username" class="inputs"  placeholder="username"><br>
+    </label><br>
+    </div>
+        
     
-
-         <div class="container">
-            <label for="name" ><br>
-                <p>ismni  kiriting: </p><br>
-                <input type="text" id="name" placeholder="ismni kiriting"><br>
-            </label><br>
-         </div>
-
-    <div class="container">
-        <label for="surname"><br>
-         <p>   Familyani  kiriting:</p> <br>
-            <input type="text" id="surname" placeholder="familyani kiriting"><br>
-        </label><br>
-    </div>
-
-
-    <div class="container">
-        <label for="age"><br>
-          <p>  Yoshingizni  kiriting:</p> <br>
-            <input type="text" id="age" placeholder="yoshingizni kiriting"><br>
-        </label><br>
-    </div>
-
-           <div class="container">
-            <label for="gender"><br>
-               <p> Jinsingizni kiriting:</p> <br>
-                <select  id="gender">
-                    <option value="male">Erkak</option>
-                    <option value="female">Ayol</option>
-                </select>
-            </label><br>
-           </div>
-
-   <div class="container language" style="height: 400px;">
-<p style="font-size: 28px;">    Qaysi tillarni bilasiz?</p><br>
-    <input type="radio" id="language">
-    <label for="language"><p>Ingliz tili</p></label>
-    <input type="radio" id="language">
-    <label for="language"><p>O'zbek tili</p></label>
-    <input type="radio" id="language">
-    <label for="language"><p>Turk tili</p></label>
-    <input type="radio" id="language">
-    <label for="language"><p>Arab tili</p></label>
-    <input type="radio" id="language">
-    <label for="language"><p>Koreys tili</p></label>
-    <input type="radio" id="language">
-    <label for="language"><p>Rus tili</p></label>
-   </div>
-   <div class="container">
+             <div class="container">
+                <label for="name" ><br>
+                    <p>ismni  kiriting: </p><br>
+                    <input type="text" id="name" class="inputs" placeholder="ismni kiriting"><br>
+                </label><br>
+             </div>
     
-    <label for="password" ><br>
-        <p style="font-style: 28px;">PAROLNI KIRITING;</p><br>
-        <input type="password" id="password" placeholder="parol kiriting"><br>
-   </div>
-    </label>
-    <div class="">
-        <button>Saqlandi</button>
-    </div>
+        <div class="container">
+            <label for="surname"><br>
+             <p>   Familyani  kiriting:</p> <br>
+                <input type="text" id="surname" placeholder="familyani kiriting"><br>
+            </label><br>
+        </div>
+    
+    
+        <div class="container">
+            <label for="age"><br>
+              <p>  Yoshingizni  kiriting:</p> <br>
+                <input type="number" id="age" class="inputs" placeholder="yoshingizni kiriting"><br>
+            </label><br>
+        </div>
+    
+               <div class="container">
+                <label for="gender"><br>
+                   <p> Jinsingizni kiriting:</p> <br>
+                    <select  id="gender">
+                        <option value="male">Erkak</option>
+                        <option value="female">Ayol</option>
+                    </select>
+                </label><br>
+               </div>
+    
+       <div class="container language" style="height: 400px;">
+    <p style="font-size: 28px;">    Qaysi tillarni bilasiz?</p><br>
+        <input type="radio" id="language">
+        <label for="language"><p>Ingliz tili</p></label>
+        <input type="radio" id="language1">
+        <label for="language1"><p>O'zbek tili</p></label>
+        <input type="radio" id="language2">
+        <label for="language2"><p>Turk tili</p></label>
+        <input type="radio" id="language3">
+        <label for="language3"><p>Arab tili</p></label>
+        <input type="radio" id="language4">
+        <label for="language4"><p>Koreys tili</p></label>
+        <input type="radio" id="language5">
+        <label for="language5"><p>Rus tili</p></label>
+       </div>
+       <div class="container">
+        
+        <label for="password" ><br>
+            <p style="font-style: 28px;">PAROLNI KIRITING;</p><br>
+            <input type="password" class="inputs" id="password" placeholder="parol kiriting"><br>
+        </label>
+        </div>
+      
+        <div class="Wrapper">
+            <button id="save">Saqlandi</button>
+        </div>
+ </div>
     <script src="./app.js"></script>
 </body>
 </html>
