@@ -6,27 +6,27 @@ const gender = document.getElementById ('gender');
 const password = document.getElementById ('password');
 const repassword = document.getElementById ('repassword');
 const lang = document.querySelectorAll ('input.language');
-const btn = document.getElementById ('save');
+const btn = document.getElementById ('save')
 
 function validate() {
     if (!username.value){
         username.style.outlineColor = 'red';
-        username.fokus ();
+        username.focus ();
         return
     }
     if (!name.value){
         name.style.outlineColor = 'red';
-        name.fokus ();
+        name.focus ();
         return
     }
     if (!password.value){
         password.style.outlineColor = 'red';
-        password.fokus ();
+        password.focus ();
         return
     }
-    if (!name.value){
+    if (!age.value){
         name.style.outlineColor = 'red';
-        name.fokus ();
+        name.focus ();
         return
     }
     if (password.value != repassword.value){
@@ -34,6 +34,17 @@ function validate() {
         password.value =  '';
         repassword.value = '';
     }
+}
+function clearvalue (){
+    username.value = '';
+    name.value = '';
+    surname.value = '';
+    age.value = '';
+    password.value = '';
+    repassword.value = '';
+    lang.forEach(el => {
+        el.checked = false;    
+    });
 }
 function createobjectuser(){
     let user = {};
@@ -55,14 +66,20 @@ function createobjectuser(){
         if (el.username == user.username){
          alert ('bunday foydalanuvchi mavjud');
          username = '';
-         username.style.outlineColor = 'red';   
+         username.focus ()
+         username.style.outlineColor = 'red'; 
+         return   
         }
-        
     });
    }
+   data.push (user);
+   localStorage.setItem ('users', JSON.stringify(data));
+
+   window.location.href = "http://127.0.0.1:5500/main.html"
 }
 btn.addEventListener ( 'click', function (){
 validate ();
 createobjectuser ();
-console.log(user);  
+clearvalue ()
  })
+ 
