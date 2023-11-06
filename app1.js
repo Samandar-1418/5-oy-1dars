@@ -25,7 +25,7 @@ btn.addEventListener('click', function() {
         data.forEach(user => {
             if (user.name == username.value && user.password == password.value) {
                 exit = true;
-                window.location.href = "http://127.0.0.1:5500/kabanet.html";
+                window.location.href = "http://127.0.0.1:5501/kabanet.html";
                 return;
             }
         });

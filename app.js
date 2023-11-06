@@ -75,7 +75,7 @@ function createobjectuser(){
    data.push (user);
    localStorage.setItem ('users', JSON.stringify(data));
 
-   window.location.href = "http://127.0.0.1:5500/main.html"
+   window.location.href = "http://127.0.0.1:5501/main.html"
 }
 btn.addEventListener ( 'click', function (){
 validate ();
